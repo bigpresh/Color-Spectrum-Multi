@@ -64,7 +64,7 @@ sub generate {
 
     my ($steps, @points) = @_;
     my @colours;
-    my $steps_used;
+    my $steps_used = 0;
     # take the first colour waypoint off:
     my $startpoint = shift @points;
     

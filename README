@@ -1,16 +1,15 @@
 Color-Spectrum-Multi
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+A very simple wrapper around Color::Spectrum, to make fading between more than
+two colours simple and pleasant.
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+See Color::Spectrum's documentation - the only difference using
+Color::Spectrum::Multi is that you can supply as many colours as you wish.
 
+For instance, you could fade from red, through yellow, to green:
+
+my $spectrum = Color::Spectrum::Multi->new;
+my @colors = $spectrum->generate(15, '#FF0000', '#FFEE00', '#00FF00');
 
 INSTALLATION
 
